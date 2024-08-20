@@ -35,10 +35,16 @@ const Header = async (props: Props) => {
                 <HydrationBoundary state={dehydrate(queryClient)}>
                     <ProfileButton />
                 </HydrationBoundary>
-                <button className="grid size-14 place-items-center rounded-xl border text-xl text-gray-800 transition-all hover:bg-gray-100">
+                <button
+                    className="grid size-14 place-items-center rounded-xl border text-xl text-gray-800 transition-all hover:bg-gray-100"
+                    aria-label="Github Button"
+                >
                     <Icon icon="tabler:brand-github" />
                 </button>
-                <button className="grid size-14 place-items-center rounded-xl border text-xl text-gray-800 transition-all hover:bg-gray-100">
+                <button
+                    className="grid size-14 place-items-center rounded-xl border text-xl text-gray-800 transition-all hover:bg-gray-100"
+                    aria-label="Discord Button"
+                >
                     <Icon icon="tabler:brand-discord" />
                 </button>
             </div>
