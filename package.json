@@ -1,26 +1,60 @@
 {
-  "name": "dreamland.works",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5"
-  }
+    "name": "dreamland.works",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "format": "prettier --write .",
+        "db:generate": "drizzle-kit generate",
+        "db:migrate": "bun database/migrate.ts"
+    },
+    "dependencies": {
+        "@headlessui/react": "^2.1.2",
+        "@iconify/react": "^5.0.2",
+        "@paralleldrive/cuid2": "^2.2.2",
+        "@supabase/supabase-js": "^2.45.1",
+        "@tanstack/react-query": "^5.51.21",
+        "@tanstack/react-query-devtools": "^5.51.23",
+        "@tiptap/pm": "^2.5.8",
+        "@tiptap/react": "^2.5.8",
+        "@tiptap/starter-kit": "^2.5.8",
+        "@web3modal/siwe": "^5.0.11",
+        "@web3modal/wagmi": "^5.0.11",
+        "class-variance-authority": "^0.7.0",
+        "clsx": "^2.1.1",
+        "dotenv": "^16.4.5",
+        "drizzle-orm": "^0.32.2",
+        "envalid": "^8.0.0",
+        "next": "14.2.5",
+        "next-auth": "^4.24.7",
+        "next-themes": "^0.3.0",
+        "nextjs-toploader": "^1.6.12",
+        "postgres": "^3.4.4",
+        "react": "^18",
+        "react-dom": "^18",
+        "sonner": "^1.5.0",
+        "tailwind-merge": "^2.4.0",
+        "unique-names-generator": "^4.7.1",
+        "viem": "^2.18.8",
+        "wagmi": "^2.12.2",
+        "zod": "^3.23.8",
+        "zustand": "^4.5.4"
+    },
+    "devDependencies": {
+        "@tailwindcss/typography": "^0.5.13",
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "drizzle-kit": "^0.23.2",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.5",
+        "postcss": "^8",
+        "prettier": "^3.3.3",
+        "prettier-plugin-tailwindcss": "^0.6.5",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
+    }
 }
